@@ -33,5 +33,7 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(KERNEL_PATH)/system_dlkm_flatten/,$(TARGET_COPY_OUT_SYSTEM_DLKM)/flatten/lib/modules) \
     $(call find-copy-subdir-files,*,$(KERNEL_PATH)/system_dlkm/,$(TARGET_COPY_OUT_SYSTEM_DLKM)/lib/modules/6.6.30-android15-8-g8eff17a54aa9-abogki407711482-4k)
 
+TARGET_ODM_PROP += $(DEVICE_PATH)/configs/properties/odm.prop
+
 # Inherit from the proprietary version
 include vendor/xiaomi/dijun/BoardConfigVendor.mk
