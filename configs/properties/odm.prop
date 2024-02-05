@@ -1,2 +1,5 @@
+# Bluetooth
+bluetooth.device.default_name=Xiaomi 15s Pro
+
 # USB
 vendor.usb.product_string=Xiaomi 15s Pro
