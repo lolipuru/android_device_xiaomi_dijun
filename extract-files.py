@@ -37,6 +37,14 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/camera.device-external-impl.so',
     ): blob_fixup()
         .replace_needed('android.hardware.graphics.common-V5-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
+    (
+        'vendor/lib64/com.xiaomi.immunesystem.bigdata2.so',
+        'vendor/lib64/libcameraopt.so',
+        'vendor/lib64/libcameraopt.so',
+        'vendor/lib64/libcom.xiaomi.threadpool.so',
+        'vendor/lib64/librcam_cdi.so',
+    ): blob_fixup()
+        .add_needed('libprocessgroup_shim.so'),
 }
 
 module = ExtractUtilsModule(
