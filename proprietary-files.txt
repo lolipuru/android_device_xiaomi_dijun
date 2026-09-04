@@ -1379,7 +1379,6 @@ vendor/lib64/libcom.xiaomi.signaltrigger.so
 vendor/lib64/libcom.xiaomi.threadpool.so
 vendor/lib64/libedr.so
 vendor/lib64/libeffects.so
-vendor/lib64/libeffectsconfig.so
 vendor/lib64/liblsc_core.so
 vendor/lib64/libmetatagwrapper.so
 vendor/lib64/libmialgo.so
@@ -1394,7 +1393,6 @@ vendor/lib64/libmicamera_fps_checker.so
 vendor/lib64/libmicamera_hal_core.so
 vendor/lib64/libmicamera_hal_policy.so
 vendor/lib64/libmicamGlobalPool.so
-vendor/lib64/libmidatabase.so
 vendor/lib64/libmodel_zoo.so
 vendor/lib64/libofflinedebugdata.so
 vendor/lib64/librcam_buf_firmware.so
