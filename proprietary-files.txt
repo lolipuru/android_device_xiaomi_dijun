@@ -2407,6 +2407,14 @@ vendor/etc/vintf/manifest/nxp-uwb-service.xml
 vendor/firmware/uwb/libsr200t_fw.so
 vendor/lib64/uwb_uci.helios.so
 
+# Vibratorfeature
+odm/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service
+odm/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc
+odm/etc/permissions/vendor.hardware.vibratorfeature-permission.xml
+odm/etc/vintf/manifest/vendor.xiaomi.hardware.vibratorfeature.service.xml
+odm/etc/waveform_conf.xml
+vendor/lib64/vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk.so
+
 # Vibrator Firmware (Cirrus)
 vendor/etc/firmware/cs40l26/cs40l26-a2h1.bin
 vendor/etc/firmware/cs40l26/cs40l26-a2h.bin
