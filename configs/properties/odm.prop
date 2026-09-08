@@ -1,10 +1,36 @@
 # Bluetooth
 bluetooth.device.default_name=Xiaomi 15s Pro
 
+# Citsensor
+persist.vendor.sensor.deviceorient=true
+persist.vendor.sensor.mischeck=true
+persist.vendor.sensor.onetrack=true
+persist.vendor.thermal.brightness.bcl=true
+persist.vendor.tracking.dfs=true
+ro.vendor.sensor.maxbrightness=5460
+
 # Fingerprint
 persist.vendor.fingerprint.type=udfps
 # TODO: correct position later
 persist.vendor.fingerprint.sensor_location=720|2250|120
 
+# Touchfeature
+persist.sys.touch.followup.enable=true
+persist.vendor.touchfeature.gameturbotool.version=v3.5
+persist.vendor.touchfeature.hot_area.enable=true
+persist.vendor.touchfeature.ticketgrab.enable=true
+ro.vendor.touch.touchscheduler.enable=true
+ro.vendor.touchfeature.type=183
+
 # USB
 vendor.usb.product_string=Xiaomi 15s Pro
+
+# Vibrator
+ro.odm.mm.vibrator.sys_path=/sys/bus/i2c/drivers/xring-smartpa/0-0043
+ro.odm.mm.vibrator.device_type=pcm
+ro.odm.mm.vibrator.resonant_frequency=130
+ro.odm.mm.vibrator.audio_haptic_support=true
+ro.odm.mm.vibrator.slide_effect_protect_time=20
+ro.odm.mm.vibrator.cirrus=true
+ro.odm.mm.vibrator.manufacturer=cirrus
+sys.haptic.motor=linear
