@@ -1,5 +1,10 @@
 # Bluetooth
 bluetooth.device.default_name=Xiaomi 15s Pro
 
+# Fingerprint
+persist.vendor.fingerprint.type=udfps
+# TODO: correct position later
+persist.vendor.fingerprint.sensor_location=720|2250|120
+
 # USB
 vendor.usb.product_string=Xiaomi 15s Pro
