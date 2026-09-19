@@ -1,7 +1,14 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from Xiaomi 15S Pro (OS3.0.10.0.WODCNXM). 
+## are from Xiaomi 15S Pro (OS4.0.0.17.XODCNXM). 
 
 # Audio firmware
+odm/firmware/B-cs35l43-delta-music-spk-prot.bin
+odm/firmware/B-cs35l43-delta-voice-spk-prot.bin
+odm/firmware/B-cs35l43-dsp1-spk-prot.bin
+odm/firmware/cs35l43-dsp1-spk-prot.wmfw
+odm/firmware/T-cs35l43-delta-music-spk-prot.bin
+odm/firmware/T-cs35l43-delta-voice-spk-prot.bin
+odm/firmware/T-cs35l43-dsp1-spk-prot.bin
 vendor/etc/firmware/cs35l43/B-cs35l43-delta-music-spk-prot.bin
 vendor/etc/firmware/cs35l43/B-cs35l43-delta-voice-spk-prot.bin
 vendor/etc/firmware/cs35l43/B-cs35l43-dsp1-spk-prot.bin
@@ -1174,9 +1181,13 @@ odm/etc/camera/xiaomi/watermark/MiSans-Demibold.ttf
 odm/etc/camera/xiaomi/watermark/MiSans-Medium.ttf
 odm/etc/camera/xiaomi/watermark/MiSans-Regular.ttf
 odm/etc/camera/xiaomi/watermark/MiSansTibetanVF.ttf
+odm/etc/camera/xiaomi/watermark/MiSansVF.ttf
 odm/etc/camera/xiaomi/watermark/noise_logo.png
 odm/etc/camera/xiaomi/watermark/Noto-COLRv1-emojicompat.ttf
+odm/etc/camera/xiaomi/watermark/oxanium_bold.ttf
+odm/etc/camera/xiaomi/watermark/oxanium_medium.ttf
 odm/etc/camera/xiaomi/watermark/Oxanium-Medium.ttf
+odm/etc/camera/xiaomi/watermark/oxanium_regular.ttf
 odm/etc/camera/xiaomi/xringofflinesetting.json
 odm/etc/camera/xmi_slmt_4x_1080p.dlc
 odm/etc/camera/xmi_slmt_4x_720p.dlc
@@ -1540,11 +1551,13 @@ vendor/lib64/vendor.xiaomi.hardware.fx.tunnel-V1-ndk.so
 odm/lib64/hw/consumerir.O1_asic.so:vendor/lib64/hw/consumerir.O1_asic.so
 
 # NFC
+odm/bin/hw/android.hardware.nqnfc-service.nxp
+odm/etc/init/mi-nfc-service-nxp.rc
 odm/etc/libnfc-nci.conf
 odm/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
 odm/etc/libnfc-nxp.conf
-vendor/bin/hw/android.hardware.nqnfc-service.nxp
-vendor/etc/init/mi-nfc-service-nxp.rc
+odm/etc/vintf/manifest/manifest_nfc_ese.xml
+odm/lib64/nfc_nci.nqx.default.hw.so
 vendor/etc/libnfc-nxp-pnscr.conf
 vendor/etc/nfcon.pnscr
 vendor/etc/sn100u_bootup.pnscr
@@ -1567,10 +1580,7 @@ vendor/etc/sn100u_pnx_ese_sn.pnscr
 vendor/etc/sn100u_pnx_ndi.pnscr
 vendor/etc/sn100u_pnx_pcv.pnscr
 vendor/etc/sn100u_pnx_sst.pnscr
-vendor/etc/vintf/manifest/manifest_nfc_ese.xml
 vendor/lib64/libsn220u_fw.so
-vendor/lib64/nfc_nci.nqx.default.hw.so
-vendor/lib64/vendor.nxp.hardware.nfc@2.0.so
 
 # NPU
 odm/firmware/sec_npuaoc.img
@@ -2396,22 +2406,22 @@ odm/firmware/dijun_test_limits_S3910P.csv
 odm/firmware/synaptics_spi_dijun.img
 
 # UWB
-vendor/bin/hw/android.hardware.uwb-service.nxp
-vendor/etc/init/init.uwb.rc
-vendor/etc/init/nxp-uwb-service.rc
-vendor/etc/libuwb-countrycode.conf
-vendor/etc/libuwb-nxp.conf
-vendor/etc/libuwb-uci.conf
-vendor/etc/uwb_init_sr200.ubs
-vendor/etc/vintf/manifest/nxp-uwb-service.xml
-vendor/firmware/uwb/libsr200t_fw.so
-vendor/lib64/uwb_uci.helios.so
+odm/bin/hw/android.hardware.uwb-service.nxp;MODULE_SUFFIX=_odm
+odm/etc/init/init.uwb.rc
+odm/etc/init/nxp-uwb-service.rc
+odm/etc/libuwb-countrycode.conf
+odm/etc/libuwb-nxp.conf
+odm/etc/libuwb-uci.conf
+odm/etc/uwb_init_sr200.ubs
+odm/etc/vintf/manifest/nxp-uwb-service.xml
+odm/firmware/uwb/libsr200t_fw.so
+odm/lib64/uwb_uci.helios.so;MODULE_SUFFIX=_odm
 
 # Vibratorfeature
-odm/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service
-odm/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc
+odm/bin/hw/vendor.xring.hardware.vibratorfeature.service
+odm/etc/init/vendor.xring.hardware.vibratorfeature.service.rc
 odm/etc/permissions/vendor.hardware.vibratorfeature-permission.xml
-odm/etc/vintf/manifest/vendor.xiaomi.hardware.vibratorfeature.service.xml
+odm/etc/vintf/manifest/vendor.xring.hardware.vibratorfeature.service.xml
 odm/etc/waveform_conf.xml
 vendor/lib64/vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk.so
 

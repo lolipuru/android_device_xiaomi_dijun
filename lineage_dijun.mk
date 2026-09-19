@@ -22,9 +22,9 @@ PRODUCT_MODEL := 25042PN24C
 PRODUCT_MANUFACTURER := xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc=$(call normalize-path-list, "dijun dijun 15 AP3A.240905.015.A2 OS2.0.121.0.VODCNXM:user release-keys")
+    BuildDesc=$(call normalize-path-list, "dijun dijun 17 CP2A.260605.016 OS4.0.0.17.XODCNXM:user release-keys")
 
-BUILD_FINGERPRINT := Xiaomi/dijun/dijun:15/AP3A.240905.015.A2/OS2.0.121.0.VODCNXM:user/release-keys
+BUILD_FINGERPRINT := Xiaomi/dijun/dijun:17/CP2A.260605.016/OS4.0.0.17.XODCNXM:user/release-keys
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
