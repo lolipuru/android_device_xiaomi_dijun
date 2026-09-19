@@ -7,8 +7,8 @@
 DEVICE_PATH := device/xiaomi/dijun
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 
-# Inherit from o1_asic-common
-include device/xiaomi/o1_asic-common/BoardConfigCommon.mk
+# Inherit from O1_asic-common
+include device/xiaomi/O1_asic-common/BoardConfigCommon.mk
 
 # Display
 TARGET_SCREEN_DENSITY := 520

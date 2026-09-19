@@ -20,7 +20,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'vendor/xiaomi/o1_asic-common',
+    'vendor/xiaomi/O1_asic-common',
 ]
 
 blob_fixups: blob_fixups_user_type = {
@@ -50,6 +50,6 @@ module = ExtractUtilsModule(
 
 if __name__ == '__main__':
     utils = ExtractUtils.device_with_common(
-        module, 'o1_asic-common', module.vendor
+        module, 'O1_asic-common', module.vendor
     )
     utils.run()
