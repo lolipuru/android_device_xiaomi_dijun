@@ -1207,7 +1207,7 @@ odm/lib64/libanc_single_bokeh.so
 odm/lib64/libanc_supermoon.so
 odm/lib64/libAncHumanPreviewBokeh.so
 odm/lib64/libarc.ion.so
-odm/lib64/libarcnpu.so
+odm/lib64/libarcnpu.so;DISABLE_CHECKELF
 odm/lib64/libarcsoft_astronomical_photography.so
 odm/lib64/libarcsoft_pic_trace.so
 odm/lib64/libarcsoft_raw_sr.so
@@ -1367,6 +1367,7 @@ vendor/lib64/libafd.so
 vendor/lib64/libaisynccore.so
 vendor/lib64/libaon_client.so
 vendor/lib64/libawbcore.so
+vendor/lib64/libcustom.so
 vendor/lib64/libcamera.xiaomi.catchlog.so
 vendor/lib64/libcameraopt_stub.so
 vendor/lib64/libcameraopt.so
