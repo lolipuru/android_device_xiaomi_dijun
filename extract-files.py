@@ -25,6 +25,12 @@ namespace_imports = [
 
 blob_fixups: blob_fixups_user_type = {
     (
+        'odm/etc/camera/default_snsc_bokeh_motiontuning.xml',
+        'odm/etc/camera/default_snsc_enhance_motiontuning.xml',
+        'odm/etc/camera/default_snsc_motiontuning.xml',
+    ): blob_fixup()
+        .regex_replace('xml=version', 'xml version'),
+    (
        'vendor/lib64/vendor.xiaomi.hardware.camera.injection-V1-ndk.so',
        'vendor/lib64/vendor.xiaomi.hardware.camera.injection-client.so',
        'vendor/lib64/vendor.xiaomi.hardware.camera.injection-service.so',
